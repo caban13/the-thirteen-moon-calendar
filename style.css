@@ -1,0 +1,336 @@
+.small,
+small {
+    font-size: 85%;
+}
+
+.hilite {
+    color: #930;
+}
+
+#ttmc-decoder-form {
+    border: 1px solid #983301;
+    padding: 1em 2em;
+    margin-bottom: 2em;
+    border-radius: 6px;
+}
+
+.ttmc-input-container {
+    margin: 0.5em 0;
+}
+
+form {
+    display: inline-block;
+}
+
+select #day,
+select #month,
+select #year {
+    height: 50px;
+}
+
+input[type="submit"] {
+    margin: 0.5em 0;
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+
+#response-area h2,
+#response-area h3 {
+    margin: 1.5em 0 0.5em;
+}
+
+.plasma {
+    margin: 0.75em auto 0;
+}
+
+.cell>h3 {
+    margin: 0.5em 0 !important;
+}
+
+/* GRID */
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    margin: -1em;
+}
+
+[class*="col-"]>.cell {
+    padding: 1em;
+}
+
+@media (min-width: 960px) {
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* GRID */
+
+img.pag {
+    width: 50px;
+}
+
+.cell>.kin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0.75em 0 1.5em;
+}
+
+.cell>.kin .kin-image {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    border: 1px dotted #993300;
+    padding: 1em 2em;
+    margin: 0;
+    border-radius: 9px;
+    background-color: #F6F6F6;
+}
+
+.cell>.kin .kin-destiny {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cell>.kin .kin-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell>.kin .kin img {
+    margin: 0.2em 1em;
+}
+
+.oracle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.oracle-element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0.3em;
+    padding: .2em 1em;
+    background-color: #F6F6F6;
+    border: 1px dotted #930;
+    border-radius: 9px;
+    height: 125px;
+}
+
+.earth-family {
+    border: 1px dotted #993300;
+    padding: .75em .75em .5em;
+    border-radius: 9px;
+    background-color: #F6F6F6;
+    margin: 0 1.5em 1.5em;
+}
+
+.wavespell {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    max-width: 750px;
+    margin-bottom: 1.5em;
+}
+
+.wavespell-element {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 155px;
+    margin: .3em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.wavespell-element>.kin {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;
+    margin-bottom: .3em; */
+}
+
+.wavespell-element>.kin .kin-image {
+    display: flex;
+    justify-content: center;
+}
+
+.wavespell-element>.kin .kin-destiny {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wavespell-element>.kin .kin-guide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wavespell-element>.kin img {
+    margin: 0.1em 0.3em;
+}
+
+.wavespell .portal {
+    background-color: #F6F6F6;
+    border: 3px solid #930;
+    border-radius: 9px;
+}
+
+.wavespell .chamber {
+    background-color: #F6F6F6;
+    border: 1px dotted #930;
+    border-radius: 9px;
+}
+
+.wavespell-answers {
+    padding: 0 0 0 1em;
+}
+
+.calendar {
+    width: 100%;
+    padding: 1em;
+}
+
+.calendar .moon {
+    display: grid;
+    grid-template-columns: 3em repeat(7, 1fr);
+    grid-template-rows: 8em repeat(4, 1fr);
+    align-items: end;
+    justify-items: center;
+    list-style: none;
+    margin: 0 1em 0 -1em;
+}
+
+.calendar .moon-element {
+    border: 1px dotted #930;
+    border-radius: 9px;
+    height: 155px;
+    margin: 0.3em;
+    font-size: 15px;
+    text-align: center;
+}
+
+.calendar .moon-element>.kin {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.calendar .moon-element>.kin .kin-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+.calendar .moon .plasma {
+    margin: 0;
+}
+
+
+
+div.ws-seal-only {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    max-width: 750px;
+    margin-bottom: 1.5em;
+    float: left;
+}
+
+div.ws-seal-only img {
+    margin: .3em;
+    width: 100px;
+}
+
+div.ws-seal-only::after {
+    display: block;
+    clear: both;
+}
+
+.outer {
+    overflow-x: scroll;
+}
